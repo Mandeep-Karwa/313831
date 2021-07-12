@@ -8,7 +8,6 @@ void write(char *username)
     //write a code to write data into file
     //but the expired date is important
     char product_name[151];//third column
-    char expired_date[12];//second column
     int s_no;//first column
     char *s;
     int correct_date=-1;
@@ -30,13 +29,16 @@ void write(char *username)
     s_no++;
     while(correct_date==-1)
     {
-        printf("Please enter the expired date in the format of dd/mm/yyyy\n");
-        scanf("%11s",expired_date);
-        sscanf(expired_date,"%d/%d/%d",&dd,&mm,&yy);
+        printf("Please enter the expired day\n");
+        scanf("%d",&dd);
+        printf("Please enter the expired month\n");
+        scanf("%d",&mm);
+        printf("Please enter the expired year\n");
+        scanf("%d",&yy);
         if(yy>tm.tm_year+1900)//check whether the year given is more than the present year 
         {
             correct_date=-1;
-            printf("You have entered the wrong date1\n");
+            printf("You have entered the wrong date\n");
             continue;
         }
         else
@@ -44,7 +46,7 @@ void write(char *username)
             if(mm>tm.tm_mon+1&&yy==tm.tm_year+1900)//checks whether the month is more than the present month or not
             {
                 correct_date=-1;
-                printf("You have entered the wrong date2\n");
+                printf("You have entered the wrong date\n");
                 continue;
             }
             else
@@ -52,7 +54,7 @@ void write(char *username)
                 if(mm==tm.tm_mon+1&&yy==tm.tm_year&&dd>tm.tm_mday)//checks whether the date is more than the present date or not
                 {
                     correct_date=-1;
-                    printf("You have entered the wrong date3\n");
+                    printf("You have entered the wrong date\n");
                     continue;
                 }
             }
@@ -70,7 +72,7 @@ void write(char *username)
             else
             {
                 correct_date=-1;
-                printf("You have entered the wrong date4\n");
+                printf("You have entered the wrong date\n");
                 continue;
             }
             
@@ -84,7 +86,7 @@ void write(char *username)
             else
             {
                 correct_date=-1;
-                printf("You have entered the wrong date5\n");
+                printf("You have entered the wrong date\n");
                 continue;
             }
         }
@@ -97,14 +99,14 @@ void write(char *username)
             else
             {
                 correct_date=-1;
-                printf("You have entered the wrong date6\n");
+                printf("You have entered the wrong date\n");
                 continue;
             }
         }
         else 
         {
             correct_date=-1;
-            printf("You have entered the wrong date7\n");
+            printf("You have entered the wrong date\n");
             continue;
         }  
     }
