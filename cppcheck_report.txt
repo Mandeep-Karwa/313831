@@ -1,12 +1,3 @@
-Implementation/account_signin.c:19:5: warning:inconclusive: Width 20 given in format string (no. 1) is smaller than destination buffer 'password[22]'. [invalidScanfFormatWidth_smaller]
-    scanf("%20s",password);
-    ^
-Implementation/account_signin.c:59:13: warning:inconclusive: Width 20 given in format string (no. 1) is smaller than destination buffer 'password[22]'. [invalidScanfFormatWidth_smaller]
-            scanf("%20s",password);
-            ^
-Implementation/account_signup.c:23:5: error: Width 22 given in format string (no. 1) is larger than destination buffer 'password[22]', use %21s to prevent overflowing it. [invalidScanfFormatWidth]
-    scanf("%22s",password);
-    ^
 Implementation/account_signup.c:28:9: error: Width 22 given in format string (no. 1) is larger than destination buffer 'password[22]', use %21s to prevent overflowing it. [invalidScanfFormatWidth]
         scanf("%22s",password);
         ^
