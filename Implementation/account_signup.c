@@ -25,7 +25,7 @@ void signup(char *username)
     while(strlen(password)>21)
     {
         printf("username length greater than 20\n");
-        scanf("%22s",password);
+        scanf("%21s",password);
     }
     //checking whether the username is unique
     found=-1; //to make the while loop run atleast once
