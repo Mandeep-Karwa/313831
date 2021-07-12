@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-void read(char *filename);
+void read(char *username);
 void write(char *username);
 void signup(char *username);
 void signin(char *username);

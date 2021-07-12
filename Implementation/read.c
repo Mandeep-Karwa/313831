@@ -2,13 +2,13 @@
 #include<stdlib.h>
 #include<string.h>
 #include"project.h"
-void read(char *filename)
+void read(char *username)
 {
     FILE *fp;
     char t[680];
     char *s;
     s=NULL;
-    fp=fopen(filename,"r");
+    fp=fopen(username,"r");
     if(!fp)
     {
         printf("Not able to open file\n");
