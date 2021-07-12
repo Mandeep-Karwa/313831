@@ -34,6 +34,7 @@ int main()
             scanf("%d",&selected_no);
         }
     }
+    
     if(options==0)
     {
         printf("You have given invalid input shutting down the system\n");
@@ -44,6 +45,7 @@ int main()
     printf("1.Read your stock\n");
     printf("2.Add a new entry into your stock\n");
     //print the operations like notify read write
+    
     scanf("%d",&selected_no);
     for(options=3;options>0;options--)
     {
