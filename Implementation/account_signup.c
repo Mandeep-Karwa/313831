@@ -4,7 +4,6 @@
 #include"project.h"
 void signup(char *username)
 {
-    int _var;
     //write a code to signup create a new account
     //check whether the include usenames also as an username username exist or not if the username exist give him options and then exit
     //give threshold value to user length and password length
@@ -13,20 +12,20 @@ void signup(char *username)
     char readfromfile[25];
     char *store;
     int found=0;
-    int index;
     char *s;
+    s=NULL;
     filepointer=fopen("usernames.csv","r+"); 
     //check whether the append option is write or not and the remove the comment
     printf("Please enter the username and its length should be less than 20 and you cannot take the username as usernames\n");
-    scanf("%s",username);
+    scanf("%22s",username);
     //code to check whether the user name exist and the length below 90
     printf("Please enter password and its length should be less than 20\n");
-    scanf("%s",password);
+    scanf("%22s",password);
     //check the password length below 20
     while(strlen(password)>21)
     {
         printf("username length greater than 20\n");
-        scanf("%s",password);
+        scanf("%22s",password);
     }
     //checking whether the username is unique
     found=-1; //to make the while loop run atleast once
@@ -55,7 +54,7 @@ void signup(char *username)
         if(found==-1)
         {
             printf("Choose different username as this username already exist or the  username length is above 20 and we will be not changing your password\n");
-            scanf("%s",username);
+            scanf("%22s",username);
         }
         else{
            break;

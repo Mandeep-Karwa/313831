@@ -4,7 +4,6 @@
 #include"project.h"
 int main()
 {
-    char *s;
     int selected_no,options;
     char username[1000];
     selected_no=0;

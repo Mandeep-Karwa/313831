@@ -14,9 +14,9 @@ void signin(char *username)
     filepointer=fopen("usernames.csv","r");
     //include usernames also as usernames so that he can't open the usernames file
     printf("Please enter the username\n");
-    scanf("%s",username);
+    scanf("%20s",username);
     printf("enter the password\n");
-    scanf("%s",password);
+    scanf("%20s",password);
     //check whether the username and password is correct 
     found=-1;
     while(found==-1)
@@ -54,9 +54,9 @@ void signin(char *username)
         {
             printf("Username or password is incorrect\n");
             printf("enter user name\n");
-            scanf("%s",username);
+            scanf("%20s",username);
             printf("enter password\n");
-            scanf("%s",password);
+            scanf("%20s",password);
         }
         else{
            break;

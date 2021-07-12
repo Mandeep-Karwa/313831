@@ -8,6 +8,7 @@ void read(char *filename)
     FILE *fp;
     char t[680];
     char *s;
+    s=NULL;
     fp=fopen(filename,"r");
     if(!fp)
     {
@@ -17,7 +18,6 @@ void read(char *filename)
     printf("S.No                  Expiry-Date                  Product-Name\n");
     while(fgets(t,sizeof(t),fp))
     {
-       // printf("%s",t);
         s=strtok(t,",");
         while(s!=NULL)
         {

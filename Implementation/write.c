@@ -31,7 +31,7 @@ void write(char *username)
     while(correct_date==-1)
     {
         printf("Please enter the expired date in the format of dd/mm/yyyy\n");
-        scanf("%s",expired_date);
+        scanf("%11s",expired_date);
         sscanf(expired_date,"%d/%d/%d",&dd,&mm,&yy);
         if(yy>tm.tm_year+1900)//check whether the year given is more than the present year 
         {
@@ -109,6 +109,6 @@ void write(char *username)
         }  
     }
     printf("enter product name\n");
-    scanf("%s",product_name);
+    scanf("%150s",product_name);
     fprintf(filepointer,"\n %d,%d/%d/%d,%s,",s_no,dd,mm,yy,product_name);
 }
