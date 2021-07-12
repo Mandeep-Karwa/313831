@@ -1,13 +1,13 @@
-Implementation/account_signin.c:19:5: warning:inconclusive: Width 20 given in format string (no. 1) is smaller than destination buffer 'password[1000]'. [invalidScanfFormatWidth_smaller]
+Implementation/account_signin.c:19:5: warning:inconclusive: Width 20 given in format string (no. 1) is smaller than destination buffer 'password[25]'. [invalidScanfFormatWidth_smaller]
     scanf("%20s",password);
     ^
-Implementation/account_signin.c:59:13: warning:inconclusive: Width 20 given in format string (no. 1) is smaller than destination buffer 'password[1000]'. [invalidScanfFormatWidth_smaller]
+Implementation/account_signin.c:59:13: warning:inconclusive: Width 20 given in format string (no. 1) is smaller than destination buffer 'password[25]'. [invalidScanfFormatWidth_smaller]
             scanf("%20s",password);
             ^
-Implementation/account_signup.c:23:5: warning:inconclusive: Width 22 given in format string (no. 1) is smaller than destination buffer 'password[100]'. [invalidScanfFormatWidth_smaller]
+Implementation/account_signup.c:23:5: warning:inconclusive: Width 22 given in format string (no. 1) is smaller than destination buffer 'password[25]'. [invalidScanfFormatWidth_smaller]
     scanf("%22s",password);
     ^
-Implementation/account_signup.c:28:9: warning:inconclusive: Width 22 given in format string (no. 1) is smaller than destination buffer 'password[100]'. [invalidScanfFormatWidth_smaller]
+Implementation/account_signup.c:28:9: warning:inconclusive: Width 22 given in format string (no. 1) is smaller than destination buffer 'password[25]'. [invalidScanfFormatWidth_smaller]
         scanf("%22s",password);
         ^
 Implementation/write.c:112:5: warning:inconclusive: Width 150 given in format string (no. 1) is smaller than destination buffer 'product_name[300]'. [invalidScanfFormatWidth_smaller]
