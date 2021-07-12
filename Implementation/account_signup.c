@@ -22,15 +22,15 @@ void signup(char *username)
     }
     //check whether the append option is write or not and the remove the comment
     printf("Please enter the username and its length should be less than 20 and you cannot take the username as usernames\n");
-    scanf("%21s",username);
+    scanf("%20s",username);
     //code to check whether the user name exist and the length below 90
     printf("Please enter password and its length should be less than 20\n");
-    scanf("%21s",password);
+    scanf("%20s",password);
     //check the password length below 20
     while(strlen(password)>21)
     {
-        printf("username length greater than 20\n");
-        scanf("%21s",password);
+        printf("password length greater than 20\n");
+        scanf("%20s",password);
     }
     //checking whether the username is unique
     found=-1; //to make the while loop run atleast once

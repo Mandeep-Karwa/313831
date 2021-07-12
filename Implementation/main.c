@@ -35,9 +35,9 @@ int main()
     }
     if(selected_no==2)
     {
-        printf("You are left with only one option that is write in your databse");
-        printf("1.Write your first entry in your databse");
-        printf("If you select other option you will be logged out");
+        printf("You are left with only one option that is write in your databse\n");
+        printf("1.Write your first entry in your databse\n");
+        printf("If you select other options you will be logged out\n");
         scanf("%d",&selected_no);
         if(selected_no==1)
         {
