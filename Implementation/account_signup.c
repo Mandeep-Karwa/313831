@@ -15,6 +15,11 @@ void signup(char *username)
     char *s;
     s=NULL;
     filepointer=fopen("usernames.csv","r+"); 
+    if(filepointer==NULL)
+    {
+        printf("There is some problem in your databse");
+        exit(0);
+    }
     //check whether the append option is write or not and the remove the comment
     printf("Please enter the username and its length should be less than 20 and you cannot take the username as usernames\n");
     scanf("%21s",username);

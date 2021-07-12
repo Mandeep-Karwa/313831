@@ -12,6 +12,11 @@ void signin(char *username)
     char *s;
     filepointer=fopen("usernames.csv","r");
     //include usernames also as usernames so that he can't open the usernames file
+    if(filepointer==NULL)
+    {
+        printf("There is some problem in your databse");
+        exit(0);
+    }
     printf("Please enter the username\n");
     scanf("%20s",username);
     printf("enter the password\n");
