@@ -7,7 +7,7 @@ void write(char *username)
 {
     //write a code to write data into file
     //but the expired date is important
-    char product_name[300];//third column
+    char product_name[151];//third column
     char expired_date[12];//second column
     int s_no;//first column
     char *s;
