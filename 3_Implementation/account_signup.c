@@ -27,7 +27,7 @@ void signup(char *username)
     printf("Please enter password and its length should be less than 20\n");
     scanf("%20s",password);
     //check the password length below 20
-    while(strlen(password)>21)
+    while(strlen(password)>22)
     {
         printf("password length greater than 20\n");
         scanf("%20s",password);
