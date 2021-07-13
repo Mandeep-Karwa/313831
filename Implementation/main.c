@@ -12,20 +12,17 @@ int main()
     scanf("%d",&selected_no);
     for(options=3;options>0;options--)
     {
-        switch(selected_no)
+        if(selected_no==1)
+        signin(username);
+        else if(selected_no==2)
+        signup(username);
+        else
         {
-            case 1:
-            signin(username);
-            options=0;
-            break;
-            case 2:
-            signup(username);
-            options=0;
-            break;
-            default:
-            printf("please give valid input you have only %d options left\n",options);
+            printf("please give valid input you have only %d options left",options);
             scanf("%d",&selected_no);
+            continue;
         }
+        break;
     }
     if(selected_no==2)
     {
