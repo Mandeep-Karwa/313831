@@ -10,7 +10,7 @@ void signin(char *username)
     char *store;
     int found;
     char *s;
-    filepointer=fopen(filepointer,"usernames.csv","r");
+    filepointer=fopen("usernames.csv","r");
     //include usernames also as usernames so that he can't open the usernames file
     if(filepointer==NULL)
     {
