@@ -1,4 +1,3 @@
-# 313831
 # This project is used as stock inventory which stores two feautures those are product name and the expiry date
 
 ![example workflow](https://github.com/Mandeep-Karwa/313831/actions/workflows/main.yml/badge.svg)
