@@ -9,7 +9,7 @@ int date(int yy,int mm,int dd)
     int sp,sg,v;
     sp=((yy*100)+mm)*100+dd;//givent date
     sg=((((tm.tm_year+1900)*100)+(tm.tm_mon+1))*100)+tm.tm_mday;//present day 
-    if(sg-sp>0)//checks whether the date given is future or not
+    if(sg-sp<0)//checks whether the date given is future or not
     {
         correct_date=-1;
         printf("You have entered the wrong date\n");
