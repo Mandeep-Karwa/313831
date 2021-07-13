@@ -16,7 +16,7 @@ void write(char *username)
     time_t T= time(NULL);
     struct  tm tm = *localtime(&T);//stores the present date and time in the tm variable of data type tm
     FILE *filepointer=NULL;
-    filepointer=fopen(username,"r+");
+    fopen_s(&filepointer,username,"r+");
     if(filepointer==NULL)
     {
         printf("There is an error in database");
@@ -111,6 +111,6 @@ void write(char *username)
         }  
     }
     printf("enter product name\n");
-    scanf("%150s",product_name);
+    scanf_s("%150s",product_name);
     fprintf(filepointer,"\n %d,%d/%d/%d,%s,",s_no,dd,mm,yy,product_name);
 }
