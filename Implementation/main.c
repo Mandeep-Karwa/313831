@@ -37,39 +37,33 @@ int main()
         }
         else
         {
-            printf("Shutting down the System");
-            exit(0);
+            goto shutdown;
         }
         exit(0);
     }
     if(options==0)
     {
-        printf("You have given invalid input shutting down the system\n");
+        shutdown:printf("You have given invalid input shutting down the system\n");
         exit(0);
     }
     printf("Do you want to do any opearions as given below\n1.Read your stock\n2.Add a new entry into your stock\n");
     scanf("%d",&selected_no);
     for(options=3;options>0;options--)
     {
-        switch (selected_no)
+        if(selected_no==1)
+        read(username);
+        else if(selected_no==2)
+        write(username);
+        else
         {
-            case 1:
-            read(username);
-            options=0;
-            break;
-            case 2:
-            write(username);
-            options=0;
-            break;
-            default:
             printf("please give valid input you have only %d options left",options);
             scanf("%d",&selected_no);
-            break;
+            continue;
         }
+        break;
     }
     if(options==0)
     {
-        printf("You have given invalid input shutting down the system\n");
-        exit(0);
+        goto shutdown;
     }
 }
