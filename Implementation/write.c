@@ -111,6 +111,6 @@ void write(char *username)
         }  
     }
     printf("enter product name\n");
-    scanf_s("%150s",product_name);
+    scanf("%150s",product_name);
     fprintf(filepointer,"\n %d,%d/%d/%d,%s,",s_no,dd,mm,yy,product_name);
 }

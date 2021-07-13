@@ -18,9 +18,9 @@ void signin(char *username)
         exit(0);
     }
     printf("Please enter the username\n");
-    scanf_s("%20s",username);
+    scanf("%20s",username);
     printf("enter the password\n");
-    scanf_s("%20s",password);
+    scanf("%20s",password);
     //check whether the username and password is correct 
     found=-1;
     while(found==-1)
@@ -58,9 +58,9 @@ void signin(char *username)
         {
             printf("Username or password is incorrect\n");
             printf("enter user name\n");
-            scanf_s("%20s",username);
+            scanf("%20s",username);
             printf("enter password\n");
-            scanf_s("%20s",password);
+            scanf("%20s",password);
         }
         else{
            break;
