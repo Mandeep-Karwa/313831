@@ -30,51 +30,30 @@ int date(int yy,int mm,int dd)
                 }
             }
         }
-        if(mm==2)//checking for leap year condition date
+        if(mm==2&&dd<=29&&dd>=1&&yy%4==0)//checking for leap year condition date
         {
-            if(dd<=29&&dd>=1&&yy%4==0)
+                correct_date=0;
+                return correct_date;
+        }
+            //}
+            else if(dd<=28&&dd>=1&&yy%4!=0)
             {
                 correct_date=0;
                 return correct_date;
-            }
-            else if(dd<=28&&dd>=1)
-            {
-                correct_date=0;
-                return correct_date;
-            }
-            else
-            {
-                correct_date=-1;
-                printf("You have entered the wrong date\n");
-                return correct_date;;
             }
             
-        }
-        if(mm==1||mm==3||mm==5||mm==7||mm==8||mm==10||mm==12)//check whether the date is valid for the month
+            
+        if((mm==1||mm==3||mm==5||mm==7||mm==8||mm==10||mm==12)&&dd<=31&&dd>=1)//check whether the date is valid for the month
         {
-            if(dd<=31&&dd>=1)
-            {
                 correct_date=0;
-            }
-            else
-            {
-                correct_date=-1;
-                printf("You have entered the wrong date\n");
-                return correct_date;;
-            }
+                return correct_date;           
         }
-        else if(mm>=1&&mm<=12)
+        else if(mm>=1&&mm<=12&&dd<=30&&dd>=1&&mm!=2)
         {
-            if(dd<=30&&dd>=1)
-            {
+            
                 correct_date=0;
-            }
-            else
-            {
-                correct_date=-1;
-                printf("You have entered the wrong date\n");
-                return correct_date;;
-            }
+                return correct_date;
+
         }
         else 
         {

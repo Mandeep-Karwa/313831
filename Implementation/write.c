@@ -30,11 +30,11 @@ void write(char *username)
     while(correct_date==-1)
     {
         printf("Please enter the expired day\n");
-        scanf("%3d",&dd);
+        scanf("%d",&dd);
         printf("Please enter the expired month\n");
-        scanf("%3d",&mm);
+        scanf("%d",&mm);
         printf("Please enter the expired year\n");
-        scanf("%5d",&yy);
+        scanf("%d",&yy);
         correct_date=date(yy,mm,dd);
     }
     printf("enter product name\n");
