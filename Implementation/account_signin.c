@@ -58,9 +58,9 @@ void signin(char *username)
         {
             printf("Username or password is incorrect\n");
             printf("enter user name\n");
-            scanf("%20s",username);
+            scanf_s("%20s",username);
             printf("enter password\n");
-            scanf("%20s",password);
+            scanf_s("%20s",password);
         }
         else{
            break;
