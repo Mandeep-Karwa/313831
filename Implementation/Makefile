@@ -1,6 +1,6 @@
 PROJECT_NAME=a
 TEST_NAME=TEST_$(PROJECT_NAME)
-FILE_LIST = account_signup.c account_signin.c read.c write.c  
+FILE_LIST = account_signup.c account_signin.c read.c write.c date.c
 COVERAGE_NAME=coverage_$(PROJECT_NAME)
 
 ifdef OS

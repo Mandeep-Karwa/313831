@@ -7,4 +7,5 @@ void read(char *username);
 void write(char *username);
 void signup(char *username);
 void signin(char *username);
+int date(int yy,int mm,int dd);
 #endif

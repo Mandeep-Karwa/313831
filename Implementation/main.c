@@ -16,7 +16,7 @@ int main()
         signup(username);
         else
         {
-            printf("please give valid input you have only %d options left",options);
+            printf("please give valid input you have only %d options left\n",options);
             scanf("%d",&selected_no);
             continue;
         }
@@ -48,8 +48,8 @@ int main()
         write(username);
         else
         {
-            printf("please give valid input you have only %d options left",options);
-            scanf("%d",&selected_no);
+            printf("please give valid input you have only %d options left\n",options);
+            scanf("%2d",&selected_no);
             continue;
         }
         break;
