@@ -10,4 +10,7 @@
 ![code quality](https://www.code-inspector.com/project/25094/status/svg)
 
 In this project testing is also done in the code itself that is why i didn't use any testing platform
-for example when i ask the user to enter the expired date this project would check whether the date is correct or not and it is past date or the present date.
+tests include 
+1.Date is past or present 
+2.Username should be unique
+3.Username and password length should be less than 20 charecters
