@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<string.h>
 #include"project.h"
 int main()
@@ -13,7 +12,18 @@ int main()
         if(selected_no==1)
         signin(username);
         else if(selected_no==2)
-        signup(username);
+        {
+            signup(username);
+            printf("You are left with only one option that is write in your databse\n1.Write your first entry in your databse\nIf you select other options you will be logged out\n");
+            scanf("%d",&selected_no);
+            if(selected_no==1)
+            {
+                write(username);
+                exit(0);
+            }
+            else
+               goto shutdown;
+        }
         else
         {
             printf("please give valid input you have only %d options left\n",options);
@@ -22,7 +32,7 @@ int main()
         }
         break;
     }
-    if(selected_no==2)
+    /*if(selected_no==2)
     {
         printf("You are left with only one option that is write in your databse\n1.Write your first entry in your databse\nIf you select other options you will be logged out\n");
         scanf("%d",&selected_no);
@@ -32,7 +42,7 @@ int main()
         {
             goto shutdown;
         }
-    }
+    }*/
     if(options==0)
     {
         shutdown:printf("You have given invalid input shutting down the system\n");
