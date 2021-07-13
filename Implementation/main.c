@@ -22,9 +22,6 @@ int main()
             signup(username);
             options=0;
             break;
-            case 3:
-            options=0;
-            break;
             default:
             printf("please give valid input you have only %d options left\n",options);
             scanf("%d",&selected_no);

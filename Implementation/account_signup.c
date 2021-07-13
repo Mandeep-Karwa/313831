@@ -8,7 +8,7 @@ void signup(char *username)
     //check whether the include usenames also as an username username exist or not if the username exist give him options and then exit
     //give threshold value to user length and password length
     char password[22];
-    FILE *filepointer;
+    FILE *filepointer=NULL;
     char readfromfile[25];
     char *store;
     int found=0;

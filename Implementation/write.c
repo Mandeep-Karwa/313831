@@ -15,7 +15,7 @@ void write(char *username)
     char t[20];
     time_t T= time(NULL);
     struct  tm tm = *localtime(&T);//stores the present date and time in the tm variable of data type tm
-    FILE *filepointer;
+    FILE *filepointer=NULL;
     filepointer=fopen(username,"r+");
     if(filepointer==NULL)
     {

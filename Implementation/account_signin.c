@@ -5,7 +5,7 @@ void signin(char *username)
 { 
     //write code to signin
     char password[21];
-    FILE *filepointer;
+    FILE *filepointer=NULL;
     char readfromfile[100];
     char *store;
     int found;

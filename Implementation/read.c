@@ -4,7 +4,7 @@
 #include"project.h"
 void read(char *username)
 {
-    FILE *fp;
+    FILE *fp=NULL;
     char t[680];
     char *s;
     s=NULL;
