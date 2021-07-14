@@ -16,3 +16,5 @@ tests include
 2.Username should be unique
 
 3.Username and password length should be less than 20 charecters
+
+4.Product name should be less than 150 charecters 
