@@ -8,13 +8,14 @@
 ![code quality](https://www.code-inspector.com/project/25094/score/svg)
 ![code quality](https://www.code-inspector.com/project/25094/status/svg)
 
-In this project testing is also done in the code itself that is why i didn't use any testing platform
-tests include 
+It requires user name and password to sign in and check his stock inventory i have already created one details of the username are
 
-1.Date is past or present
+username:username
 
-2.Username should be unique
+password:password
 
-3.Username and password length should be less than 20 charecters
+If you want to create your own user id then please select the options while running the make file the output of the program has been stored as a.exe for windows and a.out for linux 
 
-4.Product name should be less than 150 charecters 
+If the csv files are lost then there is a  chance of dataloss  
+
+We cannot use the username as usernames
