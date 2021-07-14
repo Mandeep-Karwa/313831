@@ -1,3 +1,13 @@
+/**
+ * @file main.c
+ * @author Mandeep Karwa (mandeepkarwa9@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-07-14
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include<stdio.h>
 #include<string.h>
 #include"project.h"

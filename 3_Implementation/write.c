@@ -1,3 +1,13 @@
+/**
+ * @file write.c
+ * @author Mandeep Karwa (mandeepkarwa9@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-07-14
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include<stdlib.h>
 #include<string.h>
 #include<stdio.h>
@@ -37,7 +47,7 @@ void write(char *username)
         scanf("%d",&yy);
         correct_date=date(yy,mm,dd);
     }
-    printf("enter product name\n");
+    printf("Enter product name it will be accepting only 149 charecters\n");
     scanf("%150s",product_name);
     fprintf(filepointer,"\n%d,%d/%d/%d,%s,",s_no,dd,mm,yy,product_name);
     fclose(filepointer);
