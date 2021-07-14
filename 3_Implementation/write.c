@@ -47,7 +47,7 @@ void write(char *username)
         scanf("%d",&yy);
         correct_date=date(yy,mm,dd);
     }
-    printf("Enter product name it will be accepting only 149 charecters\n");
+    printf("Enter product name it will be accepting only 150 charecters\n");
     scanf("%150s",product_name);
     fprintf(filepointer,"\n%d,%d/%d/%d,%s,",s_no,dd,mm,yy,product_name);
     fclose(filepointer);
